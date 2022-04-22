@@ -2,6 +2,7 @@ package org.example;
 
 
 import com.pholser.junit.quickcheck.Property;
+import com.pholser.junit.quickcheck.generator.InRange;
 import com.pholser.junit.quickcheck.runner.JUnitQuickcheck;
 import org.junit.runner.RunWith;
 
@@ -12,7 +13,7 @@ import static org.junit.jupiter.api.Assertions.assertTrue;
  * Unit test for simple App.
  */
 @RunWith(JUnitQuickcheck.class)
-public class AppTest {
+public class ClosestEvenTest {
 
     private final App app = new App();
 
@@ -25,7 +26,7 @@ public class AppTest {
     }
 
     @Property
-    public void resultShouldBeTheSameForEven(int number) {
+    public void resultShouldBeTheSameForEven(@InRange(min = "-100000", max = "100000") int number) {
 
         var num = number * 2;
 
