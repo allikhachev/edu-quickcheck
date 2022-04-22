@@ -9,7 +9,7 @@
     <version>1.0-SNAPSHOT</version>
 
     <name>quickcheck</name>
-    <description>Using junit-quickcheck on simple examples</description>
+    <description>Property-based testing with junit-quickcheck and simple examples</description>
     <url>https://github.com/allikhachev/edu-quickcheck</url>
 
     <properties>
